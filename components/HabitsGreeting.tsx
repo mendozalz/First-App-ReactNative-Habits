@@ -17,7 +17,7 @@ export default function Greeting({ nombre }: { nombre: string }) {
 }
 
 const styles = StyleSheet.create({
-  container: { padding: 16 },
+  container: { padding: 16, width: '100%' },
   titulo: { fontSize: 18, fontWeight: '600' },
   fecha: { color: '#666', marginTop: 4 },
 });

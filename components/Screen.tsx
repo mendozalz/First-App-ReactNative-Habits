@@ -15,8 +15,8 @@ export default function Screen({children}: Props) {
 const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
     backgroundColor: '#e3e7e7ff',
     paddingHorizontal: 16,
     paddingVertical: 20,

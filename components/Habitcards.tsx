@@ -31,7 +31,7 @@ export default function AvidCard({ titulo, streak, isComplete, priority = 'high'
 }
 
 const styles = StyleSheet.create({
-    card: { padding: 16, borderRadius: 12, backgroundColor: '#8d8d8dff' },
+    card: { padding: 16, borderRadius: 12, backgroundColor: '#8d8d8dff', width: '100%' },
     completada: { backgroundColor: '#d4d8d5ff' },
     row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
     titulo: { color: '#494848ff', fontWeight: '600' },

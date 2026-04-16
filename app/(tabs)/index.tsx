@@ -3,6 +3,7 @@ import HabitsGreeting from '@/components/HabitsGreeting';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import Screen from '@/components/Screen';
+import ProfileHeader from '@/components/Profileherder';
 
 
 
@@ -16,17 +17,16 @@ const habits = [
 export default function Home() {
   return (
     <Screen>
-      <View style={{ gap: 12 }}>
-        <HabitsGreeting nombre="Ana" />
-        {habits.map(h => (
-          <Habitcard
-            key={h.id}
-            titulo={h.titulo}
-            streak={h.streak}
-            isComplete={h.isComplete}
-          />
-        ))}
-      </View>
+      <ProfileHeader name="Lenin Mendoza" role="Dev" />
+      <HabitsGreeting nombre="Ana" />
+      {habits.map(h => (
+        <Habitcard
+          key={h.id}
+          titulo={h.titulo}
+          streak={h.streak}
+          isComplete={h.isComplete}
+        />
+      ))}
     </Screen>
   );
 }
